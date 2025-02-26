@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "license": "uh I dont think so",
+  "copyright": "Sprite by MillieAmp!",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "icon"
+    }
+  ]
+}
