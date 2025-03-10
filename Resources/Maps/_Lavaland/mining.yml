@@ -59,7 +59,7 @@ entities:
     - type: OccluderTree
     - type: SpreaderGrid
     - type: Shuttle
-    - type: MiningShuttle
+    # - type: MiningShuttle # ShibaStation - hopefully prevents the console from trying to load this grid
     - type: DockingShuttle
       destinations: []
     - type: ProtectedGrid
