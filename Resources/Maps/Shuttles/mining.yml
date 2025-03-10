@@ -57,6 +57,9 @@ entities:
     - type: Fixtures
       fixtures: {}
     - type: SalvageShuttle
+    - type: MiningShuttle # ShibaStation - make the salv shuttle lavaland-able.
+    - type: DockingShuttle # ShibaStation - make the salv shuttle attempt to dock to the station after FTL (and dock at Lavaland hopefully)
+      destinations: []
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
         path: /Audio/Effects/alert.ogg
