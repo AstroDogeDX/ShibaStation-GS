@@ -223,7 +223,7 @@
 - type: entity
   name: dark office chair
   id: ChairOfficeDark
-  parent: ChairOfficeLight
+  parent: RollingOfficeChairBase # Goobstation - make the rolly chairs roll!
   components:
   - type: Sprite
     state: office-dark

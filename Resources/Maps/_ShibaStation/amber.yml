@@ -4,8 +4,8 @@ meta:
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 03/12/2025 14:42:49
-  entityCount: 23489
+  time: 03/12/2025 19:45:06
+  entityCount: 23490
 maps:
 - 1
 grids:
@@ -69418,14 +69418,11 @@ entities:
       linearDamping: 0
 - proto: CrateNPCHamlet
   entities:
-  - uid: 20764
+  - uid: 271
     components:
     - type: Transform
-      pos: -16.5,-50.654945
+      pos: -14.5,-51.5
       parent: 2
-    - type: Physics
-      angularDamping: 0
-      linearDamping: 0
 - proto: CrateSecurityTrackingMindshieldImplants
   entities:
   - uid: 4184
@@ -146765,6 +146762,13 @@ entities:
       angularDamping: 0
       linearDamping: 0
       canCollide: False
+- proto: VehicleKeyJanicart
+  entities:
+  - uid: 342
+    components:
+    - type: Transform
+      pos: 25.553123,-0.5382166
+      parent: 2
 - proto: VendingBarDrobe
   entities:
   - uid: 21407
