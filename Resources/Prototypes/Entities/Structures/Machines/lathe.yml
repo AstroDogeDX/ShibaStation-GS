@@ -551,6 +551,8 @@
     - MedicalBoardsStatic
     - MedicalBoardsStaticGoob
     - PowerCellsStatic
+    # ShibaStation Packs
+    - MedicalPartsStatic
     dynamicPacks:
     - Chemistry
     # Goobstation Packs

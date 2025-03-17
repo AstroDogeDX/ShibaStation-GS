@@ -34,6 +34,14 @@
   - BoozeDispenserMachineCircuitboard
   - SodaDispenserMachineCircuitboard
 
+- type: latheRecipePack
+  id: ServicePartsStatic
+  recipes:
+  - MicroManipulatorStockPart
+  - MatterBinStockPart
+  - CapacitorStockPart
+  - CableStack
+
 ## Dynamic
 
 - type: latheRecipePack

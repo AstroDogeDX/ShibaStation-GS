@@ -86,6 +86,8 @@
     - CablesStatic
     - PowerCellsStatic
     - MiningToolsStatic
+    # ShibaStation Packs
+    - CargoPartsStatic
     dynamicPacks:
     - AdvancedTools
     - Mining
@@ -212,6 +214,8 @@
     - PowerCellsStatic
     - LatheMiscStatic
     - ChemistryStatic
+    # ShibaStation Packs
+    - ServicePartsStatic
     dynamicPacks:
     - Janitor
     - Instruments

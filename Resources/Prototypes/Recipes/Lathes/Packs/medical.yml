@@ -81,6 +81,14 @@
   - CondenserMachineCircuitBoard
   - HotplateMachineCircuitboard
 
+- type: latheRecipePack
+  id: MedicalPartsStatic
+  recipes:
+  - MicroManipulatorStockPart
+  - MatterBinStockPart
+  - CapacitorStockPart
+  - CableStack
+
 ## Dynamic
 
 # Shared with protolathe
