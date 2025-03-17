@@ -12,6 +12,13 @@
   - OreProcessorMachineCircuitboard
   - SalvageMagnetMachineCircuitboard
 
+- type: latheRecipePack
+  id: CargoPartsStatic
+  recipes:
+  - MicroManipulatorStockPart
+  - MatterBinStockPart
+  - CapacitorStockPart
+
 ## Dynamic
 
 - type: latheRecipePack
