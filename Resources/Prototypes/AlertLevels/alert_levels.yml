@@ -79,3 +79,14 @@
       forceEnableEmergencyLights: true
       emergencyLightColor: DodgerBlue
       shuttleTime: 600
+    dave: # ShibaStation - Oh god, admin has to step in again
+      announcement: alert-level-dave-announcement
+      selectable: false
+      sound:
+        path: /Audio/_ShibaStation/Announcements/alert-dave.ogg
+        params:
+          volume: -2 
+      color: Green
+      forceEnableEmergencyLights: true
+      emergencyLightColor: Green
+      shuttleTime: 600
