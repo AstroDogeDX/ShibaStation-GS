@@ -50,18 +50,6 @@
   - type: Clothing
     sprite: Clothing/Head/Helmets/cosmonaut.rsi
 
-#Ancient Void Helmet
-- type: entity
-  parent: ClothingHeadEVAHelmetBase
-  id: ClothingHeadHelmetAncient
-  name: NTSRA void helmet
-  description: An ancient space helmet, designed by the NTSRA branch of CentComm.
-  components:
-  - type: Sprite
-    sprite: Clothing/Head/Helmets/ancientvoidsuit.rsi
-  - type: Clothing
-    sprite: Clothing/Head/Helmets/ancientvoidsuit.rsi
-
 #Paramedic Void Helmet
 - type: entity
   parent: [ ClothingHeadSuitWithLightBase, ClothingHeadEVAHelmetBase ] #Despite acting like a hardsuit helmet, since it inherits from EVA Helmet, it goes here.
@@ -95,3 +83,15 @@
     radius: 5
     energy: 2
     color: "#00ffff"
+
+#Ancient Void Helmet
+- type: entity
+  parent: ClothingHeadEVAHelmetBase
+  id: ClothingHeadHelmetAncient
+  name: NTSRA void helmet
+  description: An ancient space helmet, designed by the NTSRA branch of CentComm.
+  components:
+  - type: Sprite
+    sprite: Clothing/Head/Helmets/ancientvoidsuit.rsi
+  - type: Clothing
+    sprite: Clothing/Head/Helmets/ancientvoidsuit.rsi
