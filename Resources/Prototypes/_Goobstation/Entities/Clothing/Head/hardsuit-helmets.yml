@@ -1,7 +1,7 @@
 #chrono/future soldier hardsuit
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetHardsuitChronolegioneer
   name: futuristic helmet
   description: The helmet of the fighters of the future, designed for special timeflow operations
@@ -38,7 +38,7 @@
 #bso hardsuit
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetHardsuitBlueshield
   name: blueshield helmet
   description: The helmet of the captain's bodyguard's hardsuit.
@@ -72,7 +72,7 @@
 # cybersun stealth
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetHardsuitCybersunStealth
   suffix: stealth
   name: cybersun stealth hardsuit helmet
@@ -105,7 +105,7 @@
 # cybersun dreadnought
 
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetHardsuitDreadnought
   name: cybersun Dreadnought hardsuit helmet
   description: A helmet, looking at this you wonder if there anyone alive.
