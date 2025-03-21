@@ -142,18 +142,23 @@
         volume: -4
   - type: UseDelay
     delay: 1.0
+  - type: ToggleClothing
+    action: ActionToggleParamedicSiren
   - type: ItemTogglePointLight
   - type: PointLight
     enabled: false
     radius: 2
     energy: 2
     color: blue
-    netsync: false
     mask: /Textures/Effects/LightMasks/double_cone.png
   - type: RotatingLight
     speed: 360
-  - type: ToggleableClothing # Goobstation - Modsuits change
+  - type: ToggleableClothing # Shibastation changed to work with  Goobstation's Component rework
     clothingPrototypes:
       head: ClothingHeadHelmetVoidParamed
     replaceCurrentClothing: true # ShibaStation - Wear hoods/hardsuit helmets without taking off your head gear first.
     blockUnequipWhenAttached: true # ShibaStation - Janky workaround for removing an outerwear with part deployed yoinking your head gear (it's still there it's just IN the outerwear)
+# ShibaStation - Inherited via ClothingOuterBaseToggleable
+#  - type: ContainerContainer
+#    containers:
+#      toggleable-clothing: !type:ContainerSlot { }
