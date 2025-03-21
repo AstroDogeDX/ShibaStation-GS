@@ -36,7 +36,7 @@
 
 #Emergency EVA
 - type: entity
-  parent: ClothingOuterEVASuitBase
+  parent: [ ClothingOuterEVASuitBase, ClothingOuterBaseToggleable ]
   id: ClothingOuterSuitEmergency
   name: emergency EVA suit
   description: An emergency EVA suit with a built-in helmet. It's horribly slow and lacking in temperature protection, but enough to buy you time from the harsh vacuum of space.
@@ -61,7 +61,6 @@
   - type: ToggleableClothing # Goobstation - Modsuits change
     clothingPrototypes:
       head: ClothingHeadHelmetEVALarge
-
 
 #Prisoner EVA
 - type: entity
@@ -99,7 +98,7 @@
 
 #Paramedic Voidsuit
 - type: entity
-  parent: [ClothingOuterEVASuitBase, BaseMedicalContraband] #Despite "Voidsuits are light hardsuits", since it parents of EVA Suits, it goes with the other softsuits
+  parent: [ClothingOuterEVASuitBase, ClothingOuterBaseToggleable , BaseMedicalContraband] #Despite "Voidsuits are light hardsuits", since it parents of EVA Suits, it goes with the other softsuits
   id: ClothingOuterHardsuitVoidParamed
   name: paramedic void suit
   description: A void suit made for paramedics.
@@ -156,6 +155,5 @@
   - type: ToggleableClothing # Goobstation - Modsuits change
     clothingPrototypes:
       head: ClothingHeadHelmetVoidParamed
-      action: ActionToggleParamedicSiren
     replaceCurrentClothing: true # ShibaStation - Wear hoods/hardsuit helmets without taking off your head gear first.
     blockUnequipWhenAttached: true # ShibaStation - Janky workaround for removing an outerwear with part deployed yoinking your head gear (it's still there it's just IN the outerwear)
