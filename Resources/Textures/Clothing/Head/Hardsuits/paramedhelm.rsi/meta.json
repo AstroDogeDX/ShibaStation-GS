@@ -17,19 +17,19 @@
       "name": "light-overlay"
     },
     {
-      "name": "equipped-head",
+      "name": "equipped-HELMET",
       "directions": 4
     },
     {
-      "name": "equipped-head-light",
+      "name": "equipped-HELMET-light",
       "directions": 4
     },
     {
-      "name": "equipped-head-vox",
+      "name": "equipped-HELMET-vox",
       "directions": 4
     },
     {
-      "name": "equipped-head-light-vox",
+      "name": "equipped-HELMET-light-vox",
       "directions": 4
     }
   ]

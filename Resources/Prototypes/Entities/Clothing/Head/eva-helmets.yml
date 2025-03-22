@@ -52,7 +52,7 @@
 
 #Paramedic Void Helmet
 - type: entity
-  parent: ClothingHeadHardsuitWithLightBase # goobstation - why didnt this have a light
+  parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetVoidParamed
   name: paramedic void helmet
   description: A void helmet made for paramedics.
@@ -66,11 +66,9 @@
     spriteLayer: light
     clothingVisuals:
       head:
-      - state: equipped-head-light
+      - state: equipped-HELMET-light
   - type: Clothing
-    clothingVisuals:
-      head:
-      - state: equipped-head
+    sprite: Clothing/Head/Hardsuits/paramedhelm.rsi
   - type: TemperatureProtection
     heatingCoefficient: 0.1
     coolingCoefficient: 0.1
