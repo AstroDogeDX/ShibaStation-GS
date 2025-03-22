@@ -41,6 +41,15 @@
     - id: PlushieMoth
     - id: PlushieArachind
     - id: PlushiePenguin
+    # ShibaStation Plushies Start
+    - id: PlushieMiccau
+    - id: PlushieDeroh
+    - id: PlushieCass
+    - id: PlushieAchto
+    - id: PlushieLucy
+    - id: PlushieDave
+    - id: PlushieAkuji
+    # ShibaStation Plushies End
     - !type:GroupSelector
       children:
       - id: PlushieBlackburn

@@ -44,14 +44,19 @@
     - state: red
     - sprite: Structures/Specific/anomaly.rsi
       state: anom6
-  - type: RandomSpawner
-    prototypes:
-    - AnomalyRockIron
-    - AnomalyRockSilver
-    - AnomalyRockQuartz
-    - AnomalyRockUranium
-    chance: 1
+  - type: EntityTableSpawner
+    table: !type:NestedSelector
+      tableId: RandomRockAnomalyTable
     offset: 0.15
+
+- type: entityTable
+  id: RandomRockAnomalyTable
+  table: !type:GroupSelector
+    children:
+    - id: AnomalyRockIron
+    - id: AnomalyRockSilver
+    - id: AnomalyRockQuartz
+    - id: AnomalyRockUranium
 
 - type: entity
   id: RandomAnomalyInjectorSpawner

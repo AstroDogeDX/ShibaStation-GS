@@ -1,16 +1,21 @@
+using System.Numerics;
+using Content.Server.Administration.Logs;
 using Content.Server.Anomaly.Components;
+using Content.Server.Chat.Managers;
 using Content.Server.Power.EntitySystems;
 using Content.Server.Station.Components;
 using Content.Shared.Anomaly;
 using Content.Shared.CCVar;
+using Content.Shared.Database;
 using Content.Shared.Materials;
+using Content.Shared.Physics;
+using Content.Shared.Power;
 using Content.Shared.Radio;
 using Robust.Shared.Audio;
-using Content.Shared.Physics;
+using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Components;
-using Content.Shared.Power;
 
 namespace Content.Server.Anomaly;
 
@@ -23,6 +28,8 @@ public sealed partial class AnomalySystem
 {
     [Dependency] private readonly SharedMapSystem _mapSystem = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
+    [Dependency] private readonly IChatManager _chat = default!;
+    [Dependency] private readonly IAdminLogManager _adminLogger = default!;
 
     private void InitializeGenerator()
     {
@@ -82,7 +89,8 @@ public sealed partial class AnomalySystem
         UpdateGeneratorUi(uid, component);
     }
 
-    public void SpawnOnRandomGridLocation(EntityUid grid, string toSpawn)
+    // ShibaStation - Added logSpawn parameter to allow logging whenever desired.
+    public void SpawnOnRandomGridLocation(EntityUid grid, string toSpawn, bool logSpawn = false)
     {
         if (!TryComp<MapGridComponent>(grid, out var gridComp))
             return;
@@ -126,7 +134,21 @@ public sealed partial class AnomalySystem
             if (!valid)
                 continue;
 
+
             var pos = _mapSystem.GridTileToLocal(grid, gridComp, tile);
+
+
+            // ShibaStation - Applies a slight offset to avoid exact grid alignment, except for predefined spawner prototypes.
+            // Refer to predefined spawner prototypes.
+            if (toSpawn != "!AnomalySpawnerPrototype")
+            {
+                var offset = 0.15f;
+                var xOffset = Random.NextFloat(-offset, offset);
+                var yOffset = Random.NextFloat(-offset, offset);
+
+                pos = pos.Offset(new Vector2(xOffset, yOffset));
+            }
+
             var mapPos = _transform.ToMapCoordinates(pos);
             // don't spawn in AntiAnomalyZones
             var antiAnomalyZonesQueue = AllEntityQuery<AntiAnomalyZoneComponent, TransformComponent>();
@@ -151,7 +173,24 @@ public sealed partial class AnomalySystem
             break;
         }
 
+        if (logSpawn) // ShibaStation
+        {
+            LogSpawnDetails(toSpawn, targetCoords);
+        }
+
         Spawn(toSpawn, targetCoords);
+    }
+
+    // ShibaStation
+    private void LogSpawnDetails(string prototype, EntityCoordinates coordinates)
+    {
+        var mapCords = _transform.ToMapCoordinates(coordinates);
+        var x = (int)mapCords.X;
+        var y = (int)mapCords.Y;
+        var mapId = mapCords.MapId;
+
+        _adminLogger.Add(LogType.EventRan, LogImpact.High, $"{prototype} spawned at ({x},{y}) on map {mapId}.");
+        _chat.SendAdminAnnouncement($"{prototype} spawned at ({x},{y})");
     }
 
     private void OnGeneratingStartup(EntityUid uid, GeneratingAnomalyGeneratorComponent component, ComponentStartup args)

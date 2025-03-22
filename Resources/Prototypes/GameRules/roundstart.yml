@@ -143,7 +143,7 @@
       fallbackRoles: [ NukeopsCommander, NukeopsMedic ]
       spawnerPrototype: SpawnPointNukeopsOperative
       max: 10 # Goobstation / 古布空间站 - 没有限制的核特工
-      playerRatio: 16 # Goobstation
+      playerRatio: 5 # Goobstation
       startingGear: SyndicateOperativeGearFull
       unequipOldGear: true
       roleLoadout:
@@ -215,7 +215,7 @@
   parent: BaseGameRule
   components:
   - type: GameRule
-    minPlayers: 15
+    minPlayers: 16
     cancelPresetOnTooFewPlayers: true # ShibaStation
   - type: RevolutionaryRule
   - type: AntagSelection
@@ -223,7 +223,7 @@
     definitions:
     - prefRoles: [ HeadRev ]
       max: 3
-      playerRatio: 15
+      playerRatio: 10
       briefing:
         text: head-rev-role-greeting
         color: CornflowerBlue

@@ -29,14 +29,14 @@
   id: CalmTraitor # For Dual Antag Gamemodes
   components:
   - type: GameRule
-    minPlayers: 30
+    minPlayers: 20
     cancelPresetOnTooFewPlayers: true # ShibaStation
   - type: AntagSelection
     selectionTime: BeforeJobs
     definitions:
     - prefRoles: [ Traitor ]
       max: 5
-      playerRatio: 15
+      playerRatio: 10
       blacklist:
         components:
         - AntagImmune
@@ -53,7 +53,7 @@
   id: CalmLing # For Dual Antag Gamemodes
   components:
   - type: GameRule
-    minPlayers: 30
+    minPlayers: 20
     cancelPresetOnTooFewPlayers: true # ShibaStation
   - type: AntagSelection
     selectionTime: BeforeJobs
@@ -61,7 +61,7 @@
     definitions:
     - prefRoles: [ Changeling ]
       max: 2
-      playerRatio: 15
+      playerRatio: 10
       lateJoinAdditional: true
       mindRoles:
       - MindRoleTraitor
@@ -74,7 +74,7 @@
   id: Calmops # For Dual Antag Gamemodes
   components:
   - type: GameRule
-    minPlayers: 30
+    minPlayers: 20
     cancelPresetOnTooFewPlayers: true # ShibaStation
   - type: LoadMapRule
     mapPath: /Maps/_Goobstation/Nonstations/nukieplanet.yml
@@ -84,7 +84,7 @@
     - prefRoles: [ NukeopsCommander ]
       fallbackRoles: [ Nukeops, NukeopsMedic ]
       spawnerPrototype: SpawnPointNukeopsCommander
-      playerRatio: 15
+      playerRatio: 10
       startingGear: SyndicateCommanderGearFull
       unequipOldGear: true
       components:
@@ -101,7 +101,7 @@
     - prefRoles: [ NukeopsMedic ]
       fallbackRoles: [ Nukeops, NukeopsCommander ]
       spawnerPrototype: SpawnPointNukeopsMedic
-      playerRatio: 15
+      playerRatio: 10
       startingGear: SyndicateOperativeMedicFull
       unequipOldGear: true
       components:
@@ -119,7 +119,7 @@
       fallbackRoles: [ NukeopsCommander, NukeopsMedic ]
       spawnerPrototype: SpawnPointNukeopsOperative
       max: 10
-      playerRatio: 20
+      playerRatio: 10
       startingGear: SyndicateOperativeGearFull
       unequipOldGear: true
       components:
@@ -142,7 +142,7 @@
   parent: BaseGameRule
   components:
   - type: GameRule
-    minPlayers: 30
+    minPlayers: 20
     cancelPresetOnTooFewPlayers: true # ShibaStation
   - type: RevolutionaryRule
   - type: AntagSelection
@@ -150,7 +150,7 @@
     definitions:
     - prefRoles: [ HeadRev ]
       max: 1
-      playerRatio: 20
+      playerRatio: 10
       briefing:
         text: head-rev-role-greeting
         color: CornflowerBlue
@@ -179,7 +179,7 @@
   components:
   - type: BlobRule
   - type: GameRule
-    minPlayers: 15
+    minPlayers: 20
     cancelPresetOnTooFewPlayers: true # ShibaStation
   - type: AntagSelection
     selectionTime: BeforeJobs
@@ -205,12 +205,12 @@
     weight: 7 # ShibaStation - reduce the weight of blob spawns to ideally make them less frequent. In theory.
     duration: 1
     earliestStart: 160 # ShibaStation - Only after the first recall now
-    minimumPlayers: 30 # ShibaStation - up the min player requirement too, so less chance for nukies x blob simultaneously (but honestly that's just shitsec's problem)
+    minimumPlayers: 20 # ShibaStation - up the min player requirement too, so less chance for nukies x blob simultaneously (but honestly that's just shitsec's problem)
     maxOccurrences: 1
   - type: BlobSpawnRule
     carrierBlobProtos:
     - SpawnPointGhostBlobRat
-    playersPerCarrierBlob: 30
+    playersPerCarrierBlob: 20
     maxCarrierBlob: 1
 
 # - type: entity

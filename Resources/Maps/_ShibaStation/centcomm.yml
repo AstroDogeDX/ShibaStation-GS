@@ -23813,7 +23813,7 @@ entities:
     - type: Transform
       pos: 20.428806,-32.222694
       parent: 1668
-- proto: DavePlush
+- proto: PlushieDave
   entities:
   - uid: 9108
     components:

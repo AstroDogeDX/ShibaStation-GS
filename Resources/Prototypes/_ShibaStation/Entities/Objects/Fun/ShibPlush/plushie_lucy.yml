@@ -1,7 +1,7 @@
 - type: entity
-  parent: BaseItem
-  id: LLPlush
-  name: Lucy Plush
+  parent: BasePlushie
+  id: PlushieLucy
+  name: Lucy plushie
   description: A pitiful looking plush Resomi that somehow looks like its about to
     cry. A little soggy too...
   components:

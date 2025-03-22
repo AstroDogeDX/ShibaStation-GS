@@ -1,0 +1,52 @@
+- type: entity
+  parent: BasePlushie
+  id: PlushieAkuji
+  name: Akuji plushie
+  description: A marketable plushie of Shiba Sector's most notorious Chief Central Commander. Smells like Black Russian.
+  components:
+  - type: Sprite
+    sprite: _ShibaStation/Objects/Fun/akujiplush.rsi
+    state: akuji
+  - type: EmitSoundOnUse
+    sound:
+      collection: VulpkaninBarks
+      params:
+        variation: 0.03
+  - type: EmitSoundOnActivate
+    sound:
+      collection: VulpkaninGrowls
+      params:
+        variation: 0.03
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: VulpkaninWhines
+      params:
+        variation: 0.03
+  - type: EmitSoundOnCollide
+    sound:
+      collection: VulpkaninWhines
+      params:
+        variation: 0.03
+  - type: EmitSoundOnPickup
+    sound:
+      collection: VulpkaninBarks
+      params:
+        variation: 0.03
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      collection: VulpkaninBarks
+    damage:
+      types:
+        Blunt: 0
+
+- type: entity
+  parent: PlushieAkuji
+  id: PlushieAkujiCC
+  name: Akuji plushie
+  suffix: CentComm
+  description: A limited edition marketable plushie of Shiba Sector's most notorious Chief Central Commander. Not machine washable.
+  components:
+  - type: Sprite
+    sprite: _ShibaStation/Objects/Fun/akujiplush.rsi
+    state: akuji-cc

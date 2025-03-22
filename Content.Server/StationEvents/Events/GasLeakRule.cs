@@ -5,6 +5,7 @@ using Content.Server.StationEvents.Components;
 using Content.Shared.GameTicking.Components;
 using Content.Shared.Database; // Goobstation
 using Robust.Shared.Audio;
+using Robust.Shared.Map;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 
@@ -16,6 +17,7 @@ namespace Content.Server.StationEvents.Events
         [Dependency] private readonly AtmosphereSystem _atmosphere = default!;
         [Dependency] private readonly IAdminLogManager _adminLogger = default!;
         [Dependency] private readonly IChatManager _chat = default!;
+        [Dependency] private readonly SharedTransformSystem _transform = default!;
 
         protected override void Started(EntityUid uid, GasLeakRuleComponent component, GameRuleComponent gameRule, GameRuleStartedEvent args)
         {
@@ -40,14 +42,26 @@ namespace Content.Server.StationEvents.Events
                     stationEvent.EndTime = _timing.CurTime +
                                            TimeSpan.FromSeconds(totalGas / component.MolesPerSecond +
                                                                 startAfter.Next(RobustRandom));
-                    _adminLogger.Add(LogType.EventRan, LogImpact.High, $"Gasleak placing {totalGas} moles of {component.LeakGas} at {component.TargetTile} in grid {component.TargetGrid}.");
-                    _chat.SendAdminAnnouncement($"Gasleak placing {totalGas} moles of {component.LeakGas} at {component.TargetTile} in grid {component.TargetGrid}.");
+                    // ShibaStation
+                    LogGasLeakDetails(component.LeakGas, totalGas, component.TargetCoords);
                 }
                 // Goobstation end
             }
 
             // Look technically if you wanted to guarantee a leak you'd do this in announcement but having the announcement
             // there just to fuck with people even if there is no valid tile is funny.
+        }
+
+        //ShibaStation
+        private void LogGasLeakDetails(Content.Shared.Atmos.Gas leakGas, float totalGas, EntityCoordinates targetCoords)
+        {
+            var mapCords = _transform.ToMapCoordinates(targetCoords);
+            var x = (int)mapCords.X;
+            var y = (int)mapCords.Y;
+            var mapId = mapCords.MapId;
+
+            _adminLogger.Add(LogType.EventRan, LogImpact.High, $"Gas leak placing {totalGas} moles of {leakGas} at ({x}, {y}) on map {mapId}.");
+            _chat.SendAdminAnnouncement($"Gas leak placing {totalGas} moles of {leakGas} at ({x}, {y}).");
         }
 
         protected override void ActiveTick(EntityUid uid, GasLeakRuleComponent component, GameRuleComponent gameRule, float frameTime)

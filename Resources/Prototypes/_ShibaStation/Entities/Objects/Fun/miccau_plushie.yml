@@ -1,0 +1,41 @@
+- type: entity
+  parent: BasePlushie
+  id: PlushieMiccau
+  name: Miccau plushie
+  description: A marketable plushie of Shiba Sector's most handsome fluffy boy. Smells like mint.
+  components:
+  - type: Sprite
+    sprite: _ShibaStation/Objects/Fun/miccauplush.rsi
+    state: miccau
+  - type: EmitSoundOnUse
+    sound:
+      collection: Fox
+      params:
+        variation: 0.03
+  - type: EmitSoundOnActivate
+    sound:
+      collection: Fox
+      params:
+        variation: 0.03
+  - type: EmitSoundOnTrigger
+    sound:
+      collection: VulpkaninWhines
+      params:
+        variation: 0.03
+  - type: EmitSoundOnCollide
+    sound:
+      collection: FootstepJester
+      params:
+        variation: 0.03
+  - type: EmitSoundOnPickup
+    sound:
+      collection: VulpkaninBarks
+      params:
+        variation: 0.03
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      collection: FootstepJester
+    damage:
+      types:
+        Blunt: 0

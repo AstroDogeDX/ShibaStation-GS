@@ -1,4 +1,35 @@
 Entries:
+- author: AstroDogeDX & kaminukurumi
+  changes:
+  - message: Akuji and Miccau have been turned into marketable plushies!
+    type: Add
+  id: 239
+  time: '2025-03-21T19:17:19.164592'
+- author: AstroDogeDX
+  changes:
+  - message: Shiba Sector brand plushies should now appear in loot tables!
+    type: Tweak
+  id: 238
+  time: '2025-03-21T19:17:41.981210'
+- author: kaminukurumi
+  changes:
+  - message: Changed the fax machines' animations to be consistent!
+    type: Fix
+  id: 237
+  time: '2025-03-21T19:19:31.301035'
+- author: AstroDogeDX
+  changes:
+  - message: Yet again have antag and ghost role requirements been adjusted; they've
+      mostly been lowered - so hopefully things get spicy again!
+    type: Tweak
+  id: 236
+  time: '2025-03-21T19:18:36.461676'
+- author: MinxIsntHere
+  changes:
+  - message: (Admin) Logging for anomaly spawns has been added.
+    type: Add
+  id: 235
+  time: '2025-03-21T19:18:10.715411'
 - author: AstroDogeDX
   changes:
   - message: Jobs and non-antag roles now have varied shiba shilling payouts. Command,

@@ -161,6 +161,8 @@
     weight: 5
     duration: 1
     minimumPlayers: 10
+    earliestStart: 90 # ShibaStation - First skeleton should spawn late into the shift.
+    reoccurrenceDelay: 60 # ShibaStation - Skeletons now can only happen after 60 minutes since the last one.
     maxOccurrences: 2 # ShibaStation - Capped at 2, we get too many dang skeletons.
   - type: RandomEntityStorageSpawnRule
     prototype: MobSkeletonCloset
@@ -171,9 +173,9 @@
   components:
   - type: StationEvent
     weight: 2
-    earliestStart: 75
+    earliestStart: 135 # ShibaStation - happens later, after the first recall.
     reoccurrenceDelay: 20
-    minimumPlayers: 60
+    minimumPlayers: 16 # ShibaStation - reduced from 20 to 16.
     duration: null
   - type: SpaceSpawnRule
     spawnDistance: 0
@@ -201,9 +203,9 @@
   - type: StationEvent
     weight: 6
     duration: null
-    earliestStart: 45
-    reoccurrenceDelay: 20
-    minimumPlayers: 30
+    earliestStart: 135
+    reoccurrenceDelay: 40
+    minimumPlayers: 16
   - type: SpaceSpawnRule
   - type: AntagLoadProfileRule
     # Goobstation start
@@ -259,8 +261,8 @@
   - type: StationEvent
     weight: 3.5
     duration: 1
-    earliestStart: 30
-    minimumPlayers: 20
+    earliestStart: 90
+    minimumPlayers: 16
   - type: RandomSpawnRule
     prototype: MobRevenant
 
@@ -286,8 +288,8 @@
     endAudio:
       path: /Audio/_ShibaStation/Announcements/gasleak-end.ogg
     weight: 6 # ShibaStation - Reduced from 8 to 6
-    reoccurrenceDelay: 30 # ShibaStation - Gas leaks now can only happen after 30 minutes since the last one.
-    maxOccurrences: 5 # ShibaStation - Gas leaks now can only happen 5 times per round.
+    reoccurrenceDelay: 45 # ShibaStation - Gas leaks now can only happen after 30 minutes since the last one.
+    maxOccurrences: 3 # ShibaStation - Gas leaks now can only happen 3 times per round.
   - type: GasLeakRule
 
 - type: entity
@@ -295,10 +297,11 @@
   parent: BaseStationEventLongDelay
   components:
   - type: StationEvent
-    earliestStart: 15
-    minimumPlayers: 15
+    earliestStart: 30
+    minimumPlayers: 12
     weight: 5 # ShibaStation - Reduced from 7 to 5
     duration: 240
+    maxOccurrences: 5 # ShibaStation - Kudzu growth now can only happen 5 times per round.
   - type: KudzuGrowthRule
 
 - type: entity
@@ -480,8 +483,9 @@
   - type: StationEvent
     earliestStart: 35
     weight: 5.5
-    minimumPlayers: 25
+    minimumPlayers: 18
     duration: 1
+    maxOccurrences: 1 # ShibaStation - Lone nukies now can only happen once per round.
   - type: RuleGrids
   - type: LoadMapRule
     gridPath: /Maps/Shuttles/ShuttleEvent/striker.yml
@@ -563,7 +567,7 @@
   - type: StationEvent
     weight: 8
     reoccurrenceDelay: 20
-    minimumPlayers: 20 # ShibaStation - Ion storms tend to give out free shitter tickets, and at low pop it's cringe. This better meshes with escalating danger in line with population.
+    minimumPlayers: 16 # ShibaStation - Ion storms tend to give out free shitter tickets, and at low pop it's cringe. This better meshes with escalating danger in line with population.
     duration: 1
   - type: IonStormRule
 
@@ -606,8 +610,9 @@
   - type: StationEvent
     weight: 5
     earliestStart: 15
-    reoccurrenceDelay: 20
-    minimumPlayers: 15 # ShibaStation - Increased from 4 to 15
+    reoccurrenceDelay: 40
+    minimumPlayers: 16 # ShibaStation - Increased from 4 to 16
+    maxOccurrences: 2 # ShibaStation - Derelicts now can only happen twice per round.
     duration: null
   - type: SpaceSpawnRule
     spawnDistance: 0

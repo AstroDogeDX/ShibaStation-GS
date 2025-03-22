@@ -5,6 +5,7 @@
   - type: StationEvent
     weight: 6
     duration: 1
+    earliestStart: 30 # ShibaStation
     maxOccurrences: 1 # this event has diminishing returns on interesting-ness, so we cap it
     startAudio:
       path: /Audio/_ShibaStation/Announcements/sentience-event.ogg

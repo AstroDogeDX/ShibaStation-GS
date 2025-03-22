@@ -1,7 +1,7 @@
 - type: entity
-  parent: BaseItem
-  id: AchtoPlush
-  name: Achto Plush
+  parent: BasePlushie
+  id: PlushieAchto
+  name: Achto plushie
   description: A cute little resomi(?) plush. Smells like apples and bad decisions.
   components:
   - type: Sprite

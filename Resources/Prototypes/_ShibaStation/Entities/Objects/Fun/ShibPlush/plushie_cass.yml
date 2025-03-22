@@ -1,8 +1,8 @@
 - type: entity
-  parent: BaseItem
-  id: CassPlush
-  name: Cassius Plush
-  description: A plush of the reigning NT Blockgame champion! A perfect travel companion anywhere from the bridge to the trash compactor! 
+  parent: BasePlushie
+  id: PlushieCass
+  name: Cassius plushie
+  description: A plush of the reigning NT Blockgame champion! A perfect travel companion anywhere from the bridge to the trash compactor!
   components:
   - type: Sprite
     sprite: _ShibaStation/Objects/Fun/ShibPlush/cass.rsi

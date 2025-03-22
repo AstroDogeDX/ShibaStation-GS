@@ -1,8 +1,8 @@
 - type: entity
-  parent: BaseItem
-  id: DerohPlush
-  name: Deroh Clone Jr. 
-  description: A real lady killer! Runs on Moonshine and PGGBs. 
+  parent: BasePlushie
+  id: PlushieDeroh
+  name: Deroh Clone Jr.
+  description: A real lady killer! Runs on Moonshine and PGGBs.
   components:
   - type: Sprite
     sprite: _ShibaStation/Objects/Fun/ShibPlush/deroh.rsi
