@@ -21,7 +21,7 @@
   - type: Speech
     speechSounds: Tenor
     speechVerb: Feroxi
-    allowedEmotes: [ "Gnash" ]
+    allowedEmotes: [ "Gnash", "Rawr" ]
   - type: Vocal
     sounds:
       Male: MaleFeroxi
