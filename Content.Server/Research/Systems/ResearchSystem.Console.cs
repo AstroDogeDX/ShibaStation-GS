@@ -7,7 +7,7 @@ using Content.Shared.Emag.Systems;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Research.Components;
 using Content.Shared.Research.Prototypes;
-using Content.Goobstation.Common.Pirates;
+using Content.Server._Goobstation._Pirates.Pirates.Siphon;
 
 namespace Content.Server.Research.Systems;
 

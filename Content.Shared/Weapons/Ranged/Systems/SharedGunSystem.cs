@@ -94,6 +94,7 @@ public abstract partial class SharedGunSystem : EntitySystem
         InitializeSolution();
         // Goobstation
         InitializeBasicHitScan();
+        InitializeChangeling();
 
         // Interactions
         SubscribeLocalEvent<GunComponent, GetVerbsEvent<AlternativeVerb>>(OnAltVerb);
@@ -544,7 +545,7 @@ public abstract partial class SharedGunSystem : EntitySystem
         }
     }
 
-    public IShootable EnsureShootable(EntityUid uid)
+    protected IShootable EnsureShootable(EntityUid uid)
     {
         if (TryComp<CartridgeAmmoComponent>(uid, out var cartridge))
             return cartridge;
