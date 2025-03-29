@@ -2,6 +2,7 @@ using Content.Shared.Mind;
 using Content.Shared.Objectives.Systems;
 using Robust.Shared.Utility;
 using Robust.Shared.Prototypes;
+using Robust.Shared.GameObjects;
 
 namespace Content.Shared.Objectives.Components;
 
@@ -12,6 +13,8 @@ namespace Content.Shared.Objectives.Components;
 [EntityCategory("Objectives")]
 public sealed partial class ObjectiveComponent : Component
 {
+    [Dependency] private readonly IEntityManager _entityManager = default!;
+
     /// <summary>
     /// Difficulty rating used to avoid assigning too many difficult objectives.
     /// </summary>
@@ -25,7 +28,20 @@ public sealed partial class ObjectiveComponent : Component
     private LocId Issuer { get; set; }
 
     [ViewVariables(VVAccess.ReadOnly)]
-    public string LocIssuer => Loc.GetString(Issuer);
+    public string LocIssuer
+    {
+        get
+        {
+            // Check for custom issuer first
+            var ev = new GetCustomIssuerEvent();
+            _entityManager.EventBus.RaiseLocalEvent(Owner, ref ev);
+            if (!string.IsNullOrEmpty(ev.CustomIssuer))
+                return ev.CustomIssuer;
+
+            // Fall back to localized issuer
+            return Loc.GetString(Issuer);
+        }
+    }
 
     /// <summary>
     /// Unique objectives can only have 1 per prototype id.
@@ -40,6 +56,15 @@ public sealed partial class ObjectiveComponent : Component
     /// </summary>
     [DataField]
     public SpriteSpecifier? Icon;
+}
+
+/// <summary>
+/// Event raised to get a custom issuer string for an objective, if one exists.
+/// </summary>
+[ByRefEvent]
+public record struct GetCustomIssuerEvent
+{
+    public string? CustomIssuer;
 }
 
 /// <summary>
@@ -59,15 +84,13 @@ public record struct RequirementCheckEvent(EntityUid MindId, MindComponent Mind,
 public record struct ObjectiveAssignedEvent(EntityUid MindId, MindComponent Mind, bool Cancelled = false);
 
 /// <summary>
-/// Event raised on an objective after everything has handled <see cref="ObjectiveAssignedEvent"/>.
-/// Use this to set the objective's title description or icon.
+/// Event raised on an objective after it has been assigned to a mind.
 /// </summary>
 [ByRefEvent]
 public record struct ObjectiveAfterAssignEvent(EntityUid MindId, MindComponent Mind, ObjectiveComponent Objective, MetaDataComponent Meta);
 
 /// <summary>
-/// Event raised on an objective to update the Progress field.
-/// To use this yourself call <see cref="SharedObjectivesSystem.GetInfo"/> with the mind.
+/// Event raised on an objective to get its progress.
 /// </summary>
 [ByRefEvent]
 public record struct ObjectiveGetProgressEvent(EntityUid MindId, MindComponent Mind, float? Progress = null);
