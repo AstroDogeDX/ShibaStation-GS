@@ -25,6 +25,7 @@ namespace Content.MapRenderer
 
         internal static async Task Main(string[] args)
         {
+
             if (!CommandLineArguments.TryParse(args, out var arguments))
                 return;
 

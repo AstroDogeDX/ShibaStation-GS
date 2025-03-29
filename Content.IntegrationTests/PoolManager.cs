@@ -131,7 +131,12 @@ public static partial class PoolManager
         {
             FailureLogLevel = LogLevel.Warning,
             ContentStart = true,
-            ContentAssemblies = GetAssemblies(client: true)
+            ContentAssemblies = new[]
+            {
+                typeof(Shared.Entry.EntryPoint).Assembly,
+                typeof(Client.Entry.EntryPoint).Assembly,
+                typeof(PoolManager).Assembly,
+            }
         };
 
         if (poolSettings.NoLoadContent)
@@ -422,14 +427,17 @@ we are just going to end this here to save a lot of time. This is the exception 
         if (_initialized)
             throw new InvalidOperationException("Already initialized");
 
-        DiscoverModules();
-
         _initialized = true;
-        _contentAssemblies = GetAssemblies(client: false).ToHashSet();
+        _contentAssemblies =
+        [
+            typeof(Shared.Entry.EntryPoint).Assembly,
+            typeof(Server.Entry.EntryPoint).Assembly,
+            typeof(PoolManager).Assembly
+        ];
         _contentAssemblies.UnionWith(extraAssemblies);
 
         _testPrototypes.Clear();
-        DiscoverTestPrototypes(CurrentAssembly);
+        DiscoverTestPrototypes(typeof(PoolManager).Assembly);
         foreach (var assembly in extraAssemblies)
         {
             DiscoverTestPrototypes(assembly);

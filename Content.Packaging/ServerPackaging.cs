@@ -34,7 +34,7 @@ public static class ServerPackaging
         .Select(o => o.Rid)
         .ToList();
 
-    private static readonly List<string> CoreServerContentAssemblies = new()
+    private static readonly List<string> ServerContentAssemblies = new()
     {
         "Content.Server.Database",
         "Content.Server",
@@ -104,27 +104,22 @@ public static class ServerPackaging
 
         if (!skipBuild)
         {
-            var serverModules = FindServerModules();
-
-            foreach (var module in serverModules)
+            await ProcessHelpers.RunCheck(new ProcessStartInfo
             {
-                await ProcessHelpers.RunCheck(new ProcessStartInfo
+                FileName = "dotnet",
+                ArgumentList =
                 {
-                    FileName = "dotnet",
-                    ArgumentList =
-                    {
-                        "build",
-                        Path.Combine(module, $"{module}.csproj"),
-                        "-c", configuration,
-                        "--nologo",
-                        "/v:m",
-                        $"/p:TargetOs={platform.TargetOs}",
-                        "/t:Rebuild",
-                        "/p:FullRelease=true",
-                        "/m"
-                    }
-                });
-            }
+                    "build",
+                    Path.Combine("Content.Server", "Content.Server.csproj"),
+                    "-c", configuration,
+                    "--nologo",
+                    "/v:m",
+                    $"/p:TargetOs={platform.TargetOs}",
+                    "/t:Rebuild",
+                    "/p:FullRelease=true",
+                    "/m"
+                }
+            });
 
             await PublishClientServer(platform.Rid, platform.TargetOs, configuration);
         }
@@ -143,52 +138,6 @@ public static class ServerPackaging
         }
 
         logger.Info($"Finished packaging server in {sw.Elapsed}");
-    }
-
-    private static List<string> FindServerModules(string path = ".")
-    {
-        var serverModules = new List<string> { "Content.Server" };
-
-        var directories = Directory.GetDirectories(path, "Content.*");
-        foreach (var dir in directories)
-        {
-            var dirName = Path.GetFileName(dir);
-
-            // Look for Content.{name}.Server projects
-            if (dirName != "Content.Server" && dirName.EndsWith(".Server"))
-            {
-                var projectPath = Path.Combine(dir, $"{dirName}.csproj");
-                if (File.Exists(projectPath))
-                {
-                    serverModules.Add(dirName);
-                }
-            }
-        }
-
-        return serverModules;
-    }
-
-    private static List<string> FindAllServerModules(string path = ".")
-    {
-        var modules = new List<string>(CoreServerContentAssemblies);
-
-        var directories = Directory.GetDirectories(path, "Content.*");
-        foreach (var dir in directories)
-        {
-            var dirName = Path.GetFileName(dir);
-
-            if ((dirName.EndsWith(".Server") || dirName.EndsWith(".Shared")) &&
-                !modules.Contains(dirName))
-            {
-                var projectPath = Path.Combine(dir, $"{dirName}.csproj");
-                if (File.Exists(projectPath))
-                {
-                    modules.Add(dirName);
-                }
-            }
-        }
-
-        return modules;
     }
 
     private static async Task PublishClientServer(string runtime, string targetOs, string configuration)
@@ -228,8 +177,7 @@ public static class ServerPackaging
 
         var inputPassCore = graph.InputCore;
         var inputPassResources = graph.InputResources;
-
-        var contentAssemblies = FindAllServerModules();
+        var contentAssemblies = new List<string>(ServerContentAssemblies);
 
         // Additional assemblies that need to be copied such as EFCore.
         var sourcePath = Path.Combine(contentDir, "bin", "Content.Server");
