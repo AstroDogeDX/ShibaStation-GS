@@ -121,3 +121,26 @@
     - gnashed her teeth
     - gnashed his teeth
     - gnashed its teeth
+
+- type: emote
+  id: Rawr
+  name: delta-chat-emote-name-rawr
+  category: Vocal
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [rawrs.]
+  chatTriggers:
+    - rawr
+    - rawrs
+    - rawred
+    - rawring
+    - grawr
+    - grawrs
+    - grawred
+    - grawring
+
