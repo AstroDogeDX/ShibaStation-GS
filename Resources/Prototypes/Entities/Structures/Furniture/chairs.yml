@@ -91,6 +91,7 @@
   description: Scoot from desk to desk because standing is for interns.
   parent: BaseVehicle
   abstract: true
+  save: true
   components:
   - type: Anchorable
   - type: Rotatable
