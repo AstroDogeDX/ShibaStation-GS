@@ -81,7 +81,7 @@
     state: reinforced1-icon
   - type: Clothing
     sprite: _Lavaland/Equipment/explorer_suit.rsi
-    equippedState: reinforced1-equipped-OUTERCLOTHING
+    equippedPrefix: reinforced1
   - type: ToggleableClothing
     clothingPrototypes:
       head: LavalandEquipmentExplorerHoodReinforced1
@@ -103,7 +103,7 @@
     state: reinforced1-icon_head
   - type: Clothing
     sprite: _Lavaland/Equipment/explorer_suit.rsi
-    equippedState: reinforced1-equipped-HELMET
+    equippedPrefix: reinforced1
   - type: Armor
     modifiers:
       coefficients:
@@ -125,7 +125,7 @@
     state: reinforced2-icon
   - type: Clothing
     sprite: _Lavaland/Equipment/explorer_suit.rsi
-    equippedState: reinforced2-equipped-OUTERCLOTHING
+    equippedPrefix: reinforced2
   - type: Armor
     modifiers:
       coefficients:
@@ -155,7 +155,7 @@
     state: reinforced2-icon_head
   - type: Clothing
     sprite: _Lavaland/Equipment/explorer_suit.rsi
-    equippedState: reinforced2-equipped-HELMET
+    equippedPrefix: reinforced2
   - type: Armor
     modifiers:
       coefficients:
@@ -177,7 +177,7 @@
     state: reinforced3-icon
   - type: Clothing
     sprite: _Lavaland/Equipment/explorer_suit.rsi
-    equippedState: reinforced3-equipped-OUTERCLOTHING
+    equippedPrefix: reinforced3
   - type: Armor
     modifiers:
       coefficients:
@@ -207,7 +207,7 @@
     state: reinforced3-icon_head
   - type: Clothing
     sprite: _Lavaland/Equipment/explorer_suit.rsi
-    equippedState: reinforced3-equipped-HELMET
+    equippedPrefix: reinforced3
   - type: Armor
     modifiers:
       coefficients:
