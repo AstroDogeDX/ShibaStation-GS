@@ -1,0 +1,37 @@
+- type: entity
+  parent: BasePlushie
+  id: PlushieSevan
+  name: Sevan Plush 
+  description: A merketable replication of Shiba's best caffeine guzzler! There appears to be a magnet in the hand.
+  components:
+  - type: Sprite
+    sprite: _ShibaStation/Objects/Fun/ShibPlush/sevan.rsi
+    state: icon
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Items/Toys/ian.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Items/Toys/ian.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Items/Toys/ian.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/Toys/toysqueak1.ogg
+  - type: ContainerContainer
+    containers:
+      mug: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      mug:
+        ejectOnInteract: false
+        whitelist:
+          tags:
+          - DrinkCup
+  - type: ItemMapper
+    mapLayers:
+      mug:
+        whitelist:
+          tags:
+            - DrinkCup
