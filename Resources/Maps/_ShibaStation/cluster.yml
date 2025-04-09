@@ -4,7 +4,7 @@ meta:
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 03/13/2025 12:40:12
+  time: 04/03/2025 13:05:59
   entityCount: 12861
 maps:
 - 1
@@ -58294,7 +58294,7 @@ entities:
   - uid: 12949
     components:
     - type: Transform
-      pos: 1.5,49.5
+      pos: -2.5,25.5
       parent: 2
     - type: DeviceLinkSource
       linkedPorts:

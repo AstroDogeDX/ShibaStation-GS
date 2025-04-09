@@ -74,7 +74,7 @@ public sealed partial class ChangelingIdentityComponent : Component
     ///     How much biomass should be removed per cycle.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public float BiomassDrain = 1f;
+    public float BiomassDrain = 0.75f; // ShibaStation - our rounds are longer by default, so lings get a bit more time before needing to absorb.
 
     /// <summary>
     ///     Current amount of chemicals changeling currently has.

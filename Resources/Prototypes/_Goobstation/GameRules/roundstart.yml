@@ -30,7 +30,6 @@
   components:
   - type: GameRule
     minPlayers: 20
-    cancelPresetOnTooFewPlayers: true # ShibaStation
   - type: AntagSelection
     selectionTime: BeforeJobs
     definitions:
@@ -54,7 +53,6 @@
   components:
   - type: GameRule
     minPlayers: 20
-    cancelPresetOnTooFewPlayers: true # ShibaStation
   - type: AntagSelection
     selectionTime: BeforeJobs
     agentName: changeling-roundend-name
@@ -75,7 +73,6 @@
   components:
   - type: GameRule
     minPlayers: 20
-    cancelPresetOnTooFewPlayers: true # ShibaStation
   - type: LoadMapRule
     mapPath: /Maps/_Goobstation/Nonstations/nukieplanet.yml
   - type: AntagSelection
@@ -143,7 +140,6 @@
   components:
   - type: GameRule
     minPlayers: 20
-    cancelPresetOnTooFewPlayers: true # ShibaStation
   - type: RevolutionaryRule
   - type: AntagSelection
     selectionTime: BeforeJobs
@@ -180,7 +176,6 @@
   - type: BlobRule
   - type: GameRule
     minPlayers: 20
-    cancelPresetOnTooFewPlayers: true # ShibaStation
   - type: AntagSelection
     selectionTime: BeforeJobs
     definitions:

@@ -38,11 +38,14 @@
     - id: NinjaSpawn
     - id: RevenantSpawn
     - id: SleeperAgents
+    - id: ChangelingMidround # ShibaStation
+    - id: HereticMidround # ShibaStation
+    - id: WizardMidround # ShibaStation
     - id: ZombieOutbreak
     - id: LoneOpsSpawn
     - id: DerelictCyborgSpawn
     - id: BlobSpawn # Goobstation - Blob
-    - id: LoneAbductorSpawn # Shitmed - Starlight Abductors
+    # - id: LoneAbductorSpawn # Shitmed - Starlight Abductors # ShibaStation - aliems come in pairs only now
     - id: DuoAbductorSpawn # Shitmed - Starlight Abductors
     # - id: BingleSpawn #Goobstation - Bingle # ShibaStation - Pretty sure this is memeshit, so I'm disabling it for now.
 
@@ -524,7 +527,7 @@
   id: SleeperAgents
   components:
   - type: StationEvent
-    earliestStart: 30
+    earliestStart: 20
     weight: 8
     minimumPlayers: 12
     maxOccurrences: 1 # can only happen once per round

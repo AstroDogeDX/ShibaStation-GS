@@ -8,7 +8,7 @@
     minimumPlayers: 15
     startAnnouncement: station-event-communication-interception
     startAudio:
-      path: /Audio/Announcements/intercept.ogg
+      path: /Audio/_ShibaStation/Announcements/sleeper-activate.ogg
     duration: null
     occursDuringRoundEnd: false
     chaos:
@@ -38,12 +38,13 @@
   id: ChangelingMidround
   components:
   - type: StationEvent
-    earliestStart: 20
-    weight: 3
-    minimumPlayers: 15
+    earliestStart: 10
+    weight: 2
+    minimumPlayers: 12
+    maxOccurrences: 1
     startAnnouncement: station-event-communication-interception
     startAudio:
-      path: /Audio/Announcements/intercept.ogg
+      path: /Audio/_ShibaStation/Announcements/sleeper-activate.ogg
     duration: null
     occursDuringRoundEnd: false
     chaos:
@@ -57,7 +58,7 @@
     definitions:
     - prefRoles: [ Changeling ]
       max: 1
-      playerRatio: 10
+      playerRatio: 5
       blacklist:
         components:
         - AntagImmune
@@ -73,12 +74,13 @@
   id: HereticMidround
   components:
   - type: StationEvent
-    earliestStart: 20
-    weight: 3
-    minimumPlayers: 30
+    earliestStart: 15
+    weight: 4
+    minimumPlayers: 10
+    maxOccurrences: 1
     startAnnouncement: station-event-communication-interception
     startAudio:
-      path: /Audio/Announcements/intercept.ogg
+      path: /Audio/_ShibaStation/Announcements/sleeper-activate.ogg
     duration: null
     occursDuringRoundEnd: false
     chaos:
@@ -92,7 +94,7 @@
     definitions:
     - prefRoles: [ Heretic ]
       max: 1
-      playerRatio: 15
+      playerRatio: 5
       blacklist:
         components:
         - AntagImmune

@@ -1,4 +1,41 @@
 Entries:
+- author: kaminukurumi
+  changes:
+  - message: Explorer suit for lavaland references to sprites now set to equippedPrefix
+      from equippedState (MinxLite's assistance)
+    type: Tweak
+  id: 269
+  time: '2025-04-07T13:31:33.799095'
+- author: kaminukurumi
+  changes:
+  - message: Explorer gas mask variant for Resomi
+    type: Add
+  id: 268
+  time: '2025-04-07T13:31:32.944162'
+- author: G-370
+  changes:
+  - message: Office chairs no longer get sent to the backrooms when a map is saved.
+    type: Fix
+  id: 267
+  time: '2025-04-07T13:31:29.612343'
+- author: G-370
+  changes:
+  - message: Material Silos are now mapped to the Vaults on all stations.
+    type: Tweak
+  id: 266
+  time: '2025-04-07T13:31:29.125236'
+- author: KBraid
+  changes:
+  - message: The most Adequate RD now in marketable plushie form!
+    type: Add
+  id: 265
+  time: '2025-04-07T13:31:28.653821'
+- author: kaminukurumi
+  changes:
+  - message: Resomi graphical variants to fit with the explorer suit
+    type: Add
+  id: 264
+  time: '2025-04-07T13:31:30.113036'
 - author: AstroDogeDX
   changes:
   - message: Feroxi have footprints now! Patta patta!

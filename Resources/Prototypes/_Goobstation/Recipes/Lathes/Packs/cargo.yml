@@ -13,6 +13,11 @@
   - MatterBinStockPart
   - CapacitorStockPart
 
+- type: latheRecipePack
+  id: SalvageExplosivesStatic # emag-locked
+  recipes:
+  - SeismicCharge
+
 ## Dynamic
 - type: latheRecipePack
   id: MiningWeapons
@@ -20,6 +25,10 @@
   - WeaponProtoKineticAccelerator
   - WeaponPlasmaCutter
   - WeaponPlasmaRifle
+
+- type: latheRecipePack
+  id: MiningBoards
+  recipes:
   - ShuttleGunKineticCircuitboard
 
 - type: latheRecipePack

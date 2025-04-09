@@ -4,8 +4,8 @@ meta:
   engineVersion: 247.2.0
   forkId: ""
   forkVersion: ""
-  time: 03/13/2025 12:34:24
-  entityCount: 23515
+  time: 04/03/2025 13:01:19
+  entityCount: 23514
 maps:
 - 1
 grids:
@@ -115346,7 +115346,7 @@ entities:
   - uid: 8246
     components:
     - type: Transform
-      pos: -30.466105,-58.522396
+      pos: -30.351112,-58.22446
       parent: 2
     - type: Physics
       angularDamping: 0
@@ -118992,7 +118992,7 @@ entities:
   - uid: 1919
     components:
     - type: Transform
-      pos: -30.653854,-58.99763
+      pos: -30.754253,-58.253872
       parent: 2
     - type: Physics
       angularDamping: 0
@@ -119014,7 +119014,7 @@ entities:
   - uid: 13916
     components:
     - type: Transform
-      pos: 12.5,-19.5
+      pos: -30.5,-59.5
       parent: 2
     - type: DeviceLinkSource
       linkedPorts:
@@ -139866,7 +139866,7 @@ entities:
   - uid: 8247
     components:
     - type: Transform
-      pos: -30.403597,-59.283337
+      pos: -30.69487,-58.568203
       parent: 2
     - type: Physics
       angularDamping: 0
@@ -144854,11 +144854,6 @@ entities:
     - type: Transform
       pos: -30.5,-58.5
       parent: 2
-  - uid: 4946
-    components:
-    - type: Transform
-      pos: -30.5,-59.5
-      parent: 2
   - uid: 5332
     components:
     - type: Transform
@@ -145705,7 +145700,7 @@ entities:
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: 58.500046,-71.5
+      pos: 58.414467,-71.43837
       parent: 2
     - type: Physics
       angularDamping: 0

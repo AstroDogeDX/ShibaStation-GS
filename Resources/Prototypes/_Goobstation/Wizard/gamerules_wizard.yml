@@ -55,8 +55,8 @@
   components:
   - type: StationEvent
     earliestStart: 35
-    weight: 5.5
-    minimumPlayers: 15
+    weight: 2
+    minimumPlayers: 14
     duration: 1
     chaos: # Goobstation
       Hostile: 200
