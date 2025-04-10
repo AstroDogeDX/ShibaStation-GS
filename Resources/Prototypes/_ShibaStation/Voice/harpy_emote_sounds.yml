@@ -148,7 +148,7 @@
     HarpyCaws:
       collection: HarpyCaws
     # Rawr
-    HarpyRawrs:
+    Rawr:
       collection: HarpyRawrs
     # Weh
     Weh:
@@ -316,7 +316,7 @@
     HarpyCaws:
       collection: HarpyCaws
     # Rawr
-    HarpyRawrs:
+    Rawr:
       collection: HarpyRawrs
     # Weh
     Weh:

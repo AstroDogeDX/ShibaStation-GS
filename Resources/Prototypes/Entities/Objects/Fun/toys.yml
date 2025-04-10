@@ -595,10 +595,10 @@
     state: blue
   - type: EmitSoundOnUse
     sound:
-      collection: ToySqueak
+      path: /Audio/Items/Toys/rawr.ogg
   - type: EmitSoundOnActivate
     sound:
-      collection: ToySqueak
+      path: /Audio/Items/Toys/rawr.ogg
   - type: EmitSoundOnCollide
     sound:
       collection: ToySqueak
@@ -607,7 +607,7 @@
       collection: ToyFall
   - type: EmitSoundOnTrigger
     sound:
-      collection: ToySqueak
+      path: /Audio/Items/Toys/rawr.ogg
   - type: MeleeWeapon
     wideAnimationRotation: 180
     soundHit:
