@@ -241,6 +241,8 @@
       collection: Hew
     Gnash:
       collection: FeroxiGnashes
+    Rawr:
+      collection: FeroxiRawr # ShibaStation - hehe
     Gasp:
       collection: FemaleGasp
     DefaultDeathgasp:
