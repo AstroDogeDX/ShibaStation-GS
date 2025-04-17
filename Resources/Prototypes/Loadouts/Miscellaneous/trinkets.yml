@@ -630,3 +630,15 @@
   storage:
     back:
     - TowelColorNT
+
+- type: loadout
+  id: TowelColorBlueshield
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobBlueshieldOfficer
+      time: 144000 # 40 hrs
+  storage:
+    back:
+    - TowelColorBlueshield
