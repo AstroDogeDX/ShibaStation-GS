@@ -30,7 +30,7 @@ If you want to host or create content for _SS14_, go to the [Space Station 14 re
 
 ## Links
 
-[ShibaStation Discord](https://discord.gg/yMQkrSdeWn)
+[ShibaStation Discord](https://discord.gg/shibastation)
 
 ## Documentation/Wiki
 
