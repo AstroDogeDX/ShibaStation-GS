@@ -38,7 +38,7 @@ Documentation is coming soon™
 
 ## Contributing
 
-We are happy to accept contributions from anybody. Get in [Discord](https://discord.gg/yMQkrSdeWn) if you want to help. Feel free to check the [list of issues](https://github.com/AstroDogeDX/ShibaStation-GS/issues) that need to be done and anybody can pick them up. Don't be afraid to ask for help either!
+We are happy to accept contributions from anybody. Get in [Discord](https://discord.gg/shibastation) if you want to help. Feel free to check the [list of issues](https://github.com/AstroDogeDX/ShibaStation-GS/issues) that need to be done and anybody can pick them up. Don't be afraid to ask for help either!
 While ShibaStation doesn't use the [contribution guidelines,](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html) you can feel free to if you want to check your stuff.
 
 ## Building
