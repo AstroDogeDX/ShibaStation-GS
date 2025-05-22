@@ -1,0 +1,32 @@
+# SPDX-FileCopyrightText: 2025 KBraid <53922323+KBraid@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ShibbyBot <shibby@inucast.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  parent: BasePlushie
+  id: LizardShark
+  name: Nessie 
+  description: Lizard and fish at the same time? Must be the work of wizards!
+  components:
+  - type: Sprite
+    sprite: _ShibaStation/Objects/Fun/ShibPlush/nessie.rsi
+    state: icon
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+      path: /Audio/Items/Toys/weh.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/Toys/toysqueak1.ogg
+  - type: Item
+    storedRotation: -90
+  - type: Tag
+    tags:
+      - PlushieSharkLizard
+      - Payload

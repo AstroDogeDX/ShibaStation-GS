@@ -1,8 +1,14 @@
+# SPDX-FileCopyrightText: 2025 K'Braid <53922323+KBraid@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 KBraid <53922323+KBraid@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ShibbyBot <shibby@inucast.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 - type: entity
   parent: BasePlushie
   id: PlushieSevan
   name: Sevan Plush 
-  description: A merketable replication of Shiba's best caffeine guzzler! There appears to be a magnet in the hand.
+  description: A merketable replication of Shiba's best caffeine guzzler! Smells like Coffee and Radiation. There appears to be a magnet in the hand.
   components:
   - type: Sprite
     sprite: _ShibaStation/Objects/Fun/ShibPlush/sevan.rsi
