@@ -31,6 +31,7 @@
 # SPDX-FileCopyrightText: 2024 Aexxie <codyfox.077@gmail.com>
 # SPDX-FileCopyrightText: 2024 Aiden <aiden@djkraz.com>
 # SPDX-FileCopyrightText: 2024 Alzore <140123969+Blackern5000@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2024 AstroDogeDX <48888500+AstroDogeDX@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2024 Brandon Hu <103440971+Brandon-Huu@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2024 CaasGit <87243814+CaasGit@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2024 Chief-Engineer <119664036+Chief-Engineer@users.noreply.github.com>
@@ -112,6 +113,8 @@
 # SPDX-FileCopyrightText: 2024 voidnull000 <18663194+voidnull000@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2024 zzylex <146784470+zzylex@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Aiden <28298836+Aidenkrz@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 KBraid <53922323+KBraid@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ShibbyBot <shibby@inucast.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-or-later
 # Mop Bucket
@@ -187,6 +190,10 @@
         whitelist:
           tags:
             - PlushieSharkCargo
+      mopbucket_shark_nessie:
+        whitelist:
+          tags:
+            - PlushieSharkLizard
       mopbucket_carpplush:
         whitelist:
           tags:
