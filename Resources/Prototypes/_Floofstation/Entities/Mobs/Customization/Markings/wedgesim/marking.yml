@@ -4,10 +4,10 @@
   markingCategory: Snout
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni]
   sprites:
-  - sprite: _Floofstation/Mobs/Customization/wedgey.rsi
-    state:  snout_sergal_primary
-  - sprite: _Floofstation/Mobs/Customization/wedgey.rsi
-    state:  snout_sergal_secondary
+  - sprite: _Floofstation/Mobs/Customization/wedgesnoot.rsi
+    state:  sergalsnout1
+  - sprite: _Floofstation/Mobs/Customization/wedgesnoot.rsi
+    state:  sergalsnout2
 
 
 - type: marking
@@ -15,15 +15,13 @@
   bodyPart: HeadTop
   markingCategory: HeadTop
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid]
-  colorLinks:
-    m_ears_sergal_ADJ_primary: m_ears_sergal_FRONT_primary
   sprites:
-  - sprite: _Floofstation/Mobs/Customization/wedgey.rsi
-    state: m_ears_sergal_FRONT_primary
-  - sprite: _Floofstation/Mobs/Customization/wedgey.rsi
-    state: m_ears_sergal_FRONT_secondary
-  - sprite: _Floofstation/Mobs/Customization/wedgey.rsi
-    state: m_ears_sergal_ADJ_primary
+  - sprite: _Floofstation/Mobs/Customization/wedgesnoot.rsi
+    state: sergal_ears_fp1
+  - sprite: _Floofstation/Mobs/Customization/wedgesnoot.rsi
+    state: sergal_ears_fs1
+  - sprite: _Floofstation/Mobs/Customization/wedgesnoot.rsi
+    state: sergal_ears_adj1
 
 
 - type: marking
@@ -31,22 +29,14 @@
   bodyPart: Tail
   markingCategory: Tail
   speciesRestriction: [Vulpkanin, Rodentia, SlimePerson, Human, Harpy, IPC, Arachne, Felinid, Oni]
-  layering:
-    m_tail_sergal_BEHIND_primary: TailBehind
-    m_tail_sergal_BEHIND_secondary: TailBehind
-    m_tail_sergal_FRONT_primary: TailOversuit
-    m_tail_sergal_FRONT_secondary: TailOversuit
-  colorLinks:
-    m_tail_sergal_BEHIND_primary: m_tail_sergal_FRONT_primary
-    m_tail_sergal_BEHIND_secondary: m_tail_sergal_FRONT_secondary
   sprites:
-  - sprite: _Floofstation/Mobs/Customization/wedgey.rsi
-    state: m_tail_sergal_FRONT_primary
-  - sprite: _Floofstation/Mobs/Customization/wedgey.rsi
-    state: m_tail_sergal_FRONT_secondary
-  - sprite: _Floofstation/Mobs/Customization/wedgey.rsi
-    state: m_tail_sergal_BEHIND_primary
-  - sprite: _Floofstation/Mobs/Customization/wedgey.rsi
-    state: m_tail_sergal_BEHIND_secondary
+  - sprite: _Floofstation/Mobs/Customization/wedgesnoot.rsi
+    state: sergaltail-p1
+  - sprite: _Floofstation/Mobs/Customization/wedgesnoot.rsi
+    state: sergaltail-s1
+  - sprite: _Floofstation/Mobs/Customization/wedgesnoot.rsi
+    state: sergaltail-p2
+  - sprite: _Floofstation/Mobs/Customization/wedgesnoot.rsi
+    state: sergaltail-s2
 
 
