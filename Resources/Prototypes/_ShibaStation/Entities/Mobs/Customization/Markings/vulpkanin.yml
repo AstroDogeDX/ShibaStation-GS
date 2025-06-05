@@ -1,0 +1,25 @@
+# SPDX-FileCopyrightText: 2025 ShibbyBot <shibby@inucast.com>
+# SPDX-FileCopyrightText: 2025 chly <haychiethewonderfulsnivy@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: marking
+  id: NeckChestfluff
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Vulpkanin]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Vulpkanin/vulpkanin.rsi
+    state: chestfloof
+
+
+- type: marking
+  id: TailBrushtip
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Vulpkanin/vulpkanin.rsi
+    state: brushtiptail
+  - sprite: _ShibaStation/Mobs/Customization/Vulpkanin/vulpkanin.rsi
+    state: brushtiptail2

@@ -1,0 +1,37 @@
+# SPDX-FileCopyrightText: 2025 ShibbyBot <shibby@inucast.com>
+# SPDX-FileCopyrightText: 2025 chly <haychiethewonderfulsnivy@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: marking
+  id: SnoutCheesegal
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [Vulpkanin]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Vulpkanin/cheesegal.rsi
+    state:  sergsnoutredux-1
+  - sprite: _ShibaStation/Mobs/Customization/Vulpkanin/cheesegal.rsi
+    state:  sergsnoutredux-2
+
+- type: marking
+  id: EarsCheesegal
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Vulpkanin]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Vulpkanin/cheesegal.rsi
+    state: sergears-1
+  - sprite: _ShibaStation/Mobs/Customization/Vulpkanin/cheesegal.rsi
+    state: sergears-2
+
+- type: marking
+  id: TailCheesegal
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vulpkanin]
+  sprites:
+  - sprite: _ShibaStation/Mobs/Customization/Vulpkanin/cheesegal.rsi
+    state: sergtail-1
+  - sprite: _ShibaStation/Mobs/Customization/Vulpkanin/cheesegal.rsi
+    state: sergtail-2

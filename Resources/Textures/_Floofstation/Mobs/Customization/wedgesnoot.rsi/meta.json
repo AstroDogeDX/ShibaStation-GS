@@ -1,0 +1,47 @@
+﻿{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from Skyrat and Novastation[https://github.com/NovaSector/NovaSector](SS13), ported from Floof (SS14)",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "sergal_ears_adj1",
+            "directions": 4
+        },
+        {
+            "name": "sergal_ears_fp1",
+            "directions": 4
+        },
+        {
+            "name": "sergal_ears_fs1",
+            "directions": 4
+        },
+        {
+            "name": "sergalsnout1",
+            "directions": 4
+        },
+        {
+            "name": "sergalsnout2",
+            "directions": 4
+        },
+        {
+            "name": "sergaltail-p1",
+            "directions": 4
+        },
+        {
+            "name": "sergaltail-p2",
+            "directions": 4
+        },
+        {
+            "name": "sergaltail-s1",
+            "directions": 4
+        },
+        {
+            "name": "sergaltail-s2",
+            "directions": 4
+        }
+    ]
+}
