@@ -9,7 +9,6 @@
   - sprite: _Floofstation/Mobs/Customization/wedgesnoot.rsi
     state:  sergalsnout2
 
-
 - type: marking
   id: EarsSergal
   bodyPart: HeadTop
@@ -22,7 +21,6 @@
     state: sergal_ears_fs1
   - sprite: _Floofstation/Mobs/Customization/wedgesnoot.rsi
     state: sergal_ears_adj1
-
 
 - type: marking
   id: TailSergal
@@ -38,5 +36,3 @@
     state: sergaltail-p2
   - sprite: _Floofstation/Mobs/Customization/wedgesnoot.rsi
     state: sergaltail-s2
-
-

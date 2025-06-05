@@ -8,39 +8,39 @@
     },
     "states": [
         {
-            "name": "m_ears_sergal_ADJ_primary",
+            "name": "sergal_ears_adj1",
             "directions": 4
         },
         {
-            "name": "m_ears_sergal_FRONT_primary",
+            "name": "sergal_ears_fp1",
             "directions": 4
         },
         {
-            "name": "m_ears_sergal_FRONT_secondary",
+            "name": "sergal_ears_fs1",
             "directions": 4
         },
         {
-            "name": "m_tails_sergal_BEHIND_primary",
+            "name": "sergalsnout1",
             "directions": 4
         },
         {
-            "name": "m_tails_sergal_BEHIND_secondary",
+            "name": "sergalsnout2",
             "directions": 4
         },
         {
-            "name": "m_tail_sergal_FRONT_primary",
+            "name": "sergaltail-p1",
             "directions": 4
         },
         {
-            "name": "m_tail_sergal_FRONT_secondary",
+            "name": "sergaltail-p2",
             "directions": 4
         },
         {
-            "name": "snout_sergal_primary",
+            "name": "sergaltail-s1",
             "directions": 4
         },
         {
-            "name": "snout_sergal_secondary",
+            "name": "sergaltail-s2",
             "directions": 4
         }
     ]
