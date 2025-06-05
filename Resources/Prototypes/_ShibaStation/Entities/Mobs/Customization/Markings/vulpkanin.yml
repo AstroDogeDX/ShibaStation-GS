@@ -1,4 +1,8 @@
-﻿- type: marking
+# SPDX-FileCopyrightText: 2025 chly <haychiethewonderfulsnivy@gmail.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: marking
   id: NeckChestfluff
   bodyPart: Chest
   markingCategory: Chest
