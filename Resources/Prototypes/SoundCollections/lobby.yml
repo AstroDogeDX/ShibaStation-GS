@@ -23,8 +23,10 @@
 # SPDX-FileCopyrightText: 2025 Aiden <aiden@djkraz.com>
 # SPDX-FileCopyrightText: 2025 Archylle <81660513+Archylle@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 ArtisticRoomba <145879011+ArtisticRoomba@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 AstroDogeDX <48888500+AstroDogeDX@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 August Sun <45527070+august-sun@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Aviu00 <93730715+Aviu00@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 B3CKDOOR <22119241+B3CKDOOR@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Baa <9057997+Baa14453@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 BramvanZijp <56019239+BramvanZijp@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 CBozo <165491409+CBozo@users.noreply.github.com>
@@ -59,6 +61,7 @@
 # SPDX-FileCopyrightText: 2025 Saphire <lattice@saphi.re>
 # SPDX-FileCopyrightText: 2025 ScarKy0 <106310278+ScarKy0@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Scruq445 <storchdamien@proton.me>
+# SPDX-FileCopyrightText: 2025 ShibbyBot <shibby@inucast.com>
 # SPDX-FileCopyrightText: 2025 Sirionaut <148076704+Sirionaut@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 SlamBamActionman <83650252+SlamBamActionman@users.noreply.github.com>
 # SPDX-FileCopyrightText: 2025 Southbridge <7013162+southbridge-fur@users.noreply.github.com>
@@ -169,3 +172,11 @@
     - /Audio/_ShibaStation/Lobby/wallspin.ogg
     - /Audio/_ShibaStation/Lobby/wfc_mkwii_sg.ogg
     - /Audio/_ShibaStation/Lobby/wonstoppable_101.ogg
+    - /Audio/_ShibaStation/Lobby/shibastation.ogg
+    - /Audio/_ShibaStation/Lobby/rockefellerbeat.ogg
+    - /Audio/_ShibaStation/Lobby/tetorisbeat.ogg
+    - /Audio/_ShibaStation/Lobby/miku_anamanaguchi.ogg
+    - /Audio/_ShibaStation/Lobby/arcadia.ogg
+    - /Audio/_ShibaStation/Lobby/onemore.ogg
+    - /Audio/_ShibaStation/Lobby/miku_confessions-of-a-rotten-girl.ogg
+    - /Audio/_ShibaStation/Lobby/lagoona.ogg

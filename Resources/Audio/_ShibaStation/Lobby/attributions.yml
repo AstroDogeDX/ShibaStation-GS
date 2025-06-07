@@ -1,3 +1,14 @@
+# SPDX-FileCopyrightText: 2025 AstroDogeDX <48888500+AstroDogeDX@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 B3CKDOOR <22119241+B3CKDOOR@users.noreply.github.com>
+# SPDX-FileCopyrightText: 2025 ShibbyBot <shibby@inucast.com>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+#- files: ["examplefile.ogg"]
+#  license: "License type code"
+#  copyright: "Artist name"
+#  source: "Artist name, youtube channel, name etc."
+
 - files: ["ttotm_but_waiting_for_shuttle.ogg"]
   license: "CC-BY-NC-SA-3.0"
   copyright: "Tintin On The Moon, but you're waiting for the shuttle to the station / MillieAmp. Converted from MP3 to OGG."
@@ -7,3 +18,38 @@
   license: "CC-BY-NC-SA-3.0"
   copyright: ".yuuchan (on discord)"
   source: "https://discord.gg/hFb5p4nP3g"
+
+- files: ["rockefellerbeat.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Turbo"
+  source: "https://www.youtube.com/watch?v=i-gA0vcBnPI"
+
+- files: ["tetorisbeat.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "IMOJIST"
+  source: "https://www.youtube.com/watch?v=pjD-8_yVknk"
+
+- files: ["miku_anamanaguchi.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Hatsune Miku"
+  source: "https://www.youtube.com/watch?v=NocXEwsJGOQ"
+
+- files: ["arcadia.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Dunderpatrullen"
+  source: "https://www.youtube.com/watch?v=hcFYS6Kf-1o"
+
+- files: ["onemore.ogg"]
+  license: "CC-BY-NC-ND-4.0" #Special allowance from "EMFA Music" for usage of ONLY the (public) youtube version.
+  copyright: "S3RL"
+  source: "https://djs3rl.com/shop/One-More"
+
+- files: ["miku_confessions-of-a-rotten-girl.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: ""
+  source: "https://www.youtube.com/watch?v=sV2H712ldOI"
+
+- files: ["lagoona.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Andreas Viklund & JPerZZon"
+  source: "https://www.youtube.com/watch?v=OUED_BIz6bY"
